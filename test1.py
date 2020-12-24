@@ -1,7 +1,12 @@
-user_input = float(input("Please enter seconds: "))
-if(user_input > 60 and user_input < 3600) :
-    print("Minutes: ", user_input/60)
-elif(user_input >= 3600 and user_input < 86400):
-    print("Hours: ",user_input/3600)
-elif(user_input >= 86400):
-    print("Days: ",user_input/86400)
+usr_input= True
+while usr_input==True:
+    try:
+        usr_input2= int(input('Enter an integer:'))  
+        if usr_input2 > 0 :
+            print(usr_input2**2)
+            usr_input= False
+        else: 
+            print('Sorry, I only work with positive integers.')
+    except:
+        print('Error: You did not enter an integer.')
+print('End of Program')
